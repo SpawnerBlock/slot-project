@@ -10,14 +10,13 @@ public class Main {
 		BufferedReader reader = new BufferedReader(isr);
 
 		Slot_core core = new Slot_core();
-
+		core.buttomInit();
 
 
 
 		Random ran = new Random();
 		int ram = ran.nextInt(9) + 1;
-
-		System.out.println(ram);
+		//System.out.println(ram);
 
         // 「end」が入力されるまでループ
         while (true) {
