@@ -10,13 +10,14 @@ public class Main {
 		BufferedReader reader = new BufferedReader(isr);
 
 		Slot_core core = new Slot_core();
-		core.buttomInit();
-
+		core.buttomInit(); //buttom配列の初期化
 
 
 		Random ran = new Random();
 		int ram = ran.nextInt(9) + 1;
 		//System.out.println(ram);
+
+
 
         // 「end」が入力されるまでループ
         while (true) {
@@ -35,8 +36,10 @@ public class Main {
             if (input.equals("end")) {
                 System.out.println("入力終了");
                 break;
-            } else {
+            } else if (input.equals("1") || input.equals("2") || input.equals("3")){
                 core.getInput(input);
+            } else {
+            	System.out.println("push buttom!!(1 or 2 or 3");
             }
         }
 
