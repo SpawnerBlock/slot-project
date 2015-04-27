@@ -1,7 +1,8 @@
 package slot;
 
 public class Slot_core {
-	int[] buttom = new int[10];
+	public int[] buttom = new int[10]; //これはmainクラスで宣言した方が良い気がする。
+					   //おそらく上からPG流れるから下のinsert()とgetInput()呼び出すときに毎回生成しそう。
 	
 	public void insert(){	
 		buttom[0] = 1;
