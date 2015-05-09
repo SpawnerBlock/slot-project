@@ -12,11 +12,9 @@ public class Main {
 		Slot_core core = new Slot_core();
 		core.buttomInit(); //buttom配列の初期化
 
-
-		Random ran = new Random();
-		int ram = ran.nextInt(9) + 1;
-		//System.out.println(ram);
-
+				
+    	System.out.print("push buttom!! 1 or 2 or 3");
+        System.out.print(">");
 
 
         // 「end」が入力されるまでループ
@@ -25,8 +23,6 @@ public class Main {
             String input = "";
 
             try {
-            	System.out.print("push buttom!! 1 or 2 or 3");
-                System.out.print(">");
                 input = new String(reader.readLine().getBytes("UTF-8"));
             } catch (IOException e){
                 System.out.println("入力エラー：" + e.getMessage());
@@ -40,7 +36,7 @@ public class Main {
             } else if (input.equals("1") || input.equals("2") || input.equals("3")){
                 core.getInput(input);
             } else {
-            	System.out.println("push buttom!!(1 or 2 or 3");
+            	System.out.println("push buttom!!(1 or 2 or 3)");
             }
         }
 
