@@ -26,7 +26,7 @@ public class Main {
             String input = "";
 
             try {
-            	
+
                 input = new String(reader.readLine().getBytes("UTF-8"));
             } catch (IOException e){
                 System.out.println("入力エラー：" + e.getMessage());
@@ -43,8 +43,6 @@ public class Main {
             	System.out.println("push buttom!!(1 or 2 or 3");
             }
         }
-
-
 	}
 
 }
