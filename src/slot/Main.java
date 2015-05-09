@@ -25,6 +25,7 @@ public class Main {
             String input = "";
 
             try {
+            	System.out.print("push buttom!! 1 or 2 or 3");
                 System.out.print(">");
                 input = new String(reader.readLine().getBytes("UTF-8"));
             } catch (IOException e){
